@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+/* body{
+    background-color:rgb(24, 24, 64);
+} */
+
 .container{
     margin: auto;
     align-self: center;
@@ -97,4 +101,112 @@
     color: white;
     font-weight: bold;
     border: none;
+}
+
+/* --------------------------------- Navbar------------------------------------------------- */
+
+.navbar{
+    display: flex;
+    justify-content:space-between;
+    /* border: 2px solid red; */
+    border-radius: 8px;
+    margin: 10px 10px;
+    background-color:darkslateblue;
+    height: 100px;
+}
+
+.navbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    /* border: 2px solid red; */
+    border-radius: 8px;
+    margin: 10px 300px;
+    padding: 10px;
+}
+
+.tab{
+    height: 50px;
+    /* border: 2px solid black; */
+    border-radius: 12px;
+    margin: 10px 16px;
+    padding: 10px 10px;
+    background-color: white;
+}
+
+.tab a{
+    text-decoration: none;
+    font-size: 28px;
+    color: black;
+}
+
+.tab:hover {
+    background-color: cadetblue;
+    color: white;
+}
+
+.tab a:hover{
+    background-color: cadetblue;
+    color: white;
+}
+
+.active{
+    background-color: cadetblue;
+}
+.active a{
+    color: white;
+}
+
+
+.userIcon{
+    border: 2px solid whitesmoke;
+    border-radius: 100%;
+    color: white;
+    margin:  20px 15px;
+    height: 50px;
+    width: 50px;
+    padding: 10px;
+    text-align: center;
+    font-size: 24px;
+}
+
+/* ------------------------------------------------------------ */
+
+.form-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 24px;
+    padding: 12px;
+    text-align: center;
+}
+
+#taskInput{
+    width: 500px;
+    padding: 10px;
+    font-size: 24px;
+    border-radius: 12px;
+    border: 2px solid gray;
+    box-shadow: inset;
+    flex-shrink:inherit;
+    margin: 5px;
+}
+
+#addBtn{
+    cursor: pointer;
+    border:none;
+    border-radius: 12px;
+    background-color:darkslateblue;
+    width: 75px;
+    padding: 10px;
+    color: white;
+    font-size: 24px;
+}
+
+.tasks{
+    margin: auto;
+    margin: 10px;
+    padding: 10px;
+    border:2px solid black;
 }

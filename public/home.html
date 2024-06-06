@@ -5,31 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HomePage</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
-            }
-          }
-        }
-      </script>
 </head>
 <body>
-    <nav>
-        <div>
-            <div><a href="">Long Term Goals</a></div>
-            <div><a href="">Daily Task</a></div>
-            <div><a href="">Track Data</a></div>
+    <nav class="navbar">
+        <div class="navbox">
+            <div class="tab active"><a href="./home.html" >Long Term Goals</a></div>
+            <div class="tab"><a href="./tasks.html">Daily Tasks</a></div>
+            <div class="tab"><a href="">Track Data</a></div>
         </div>
 
-        <div>
-            userIcon    
-            <!-- usericon -->
-        </div>
+        <div class="userIcon">M</div>
     </nav>
 
     
