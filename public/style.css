@@ -204,9 +204,44 @@
     font-size: 24px;
 }
 
-.tasks{
-    margin: auto;
-    margin: 10px;
+#tasks{
+    margin: 15px;
     padding: 10px;
-    border:2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.task-box{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    height: 50px;
+    border-radius:12px;
+    border:2px solid gray;
+    margin: 10px;
+}
+
+.task-msg{
+    padding: 10px 15px;
+    font-size: 24px;
+    box-shadow: inset;
+    flex-shrink: 0;
+}
+
+.deleteBtn{
+    cursor: pointer;
+    border: none;
+    margin: 2px 5px;
+    padding: 2px;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    background-color: white;
+}
+
+#done-box{
+    cursor: pointer;
 }

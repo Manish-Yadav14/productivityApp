@@ -6,7 +6,9 @@ const getAllTasks = async(req,res)=>{
     const {userId} = req.body;
     try{
         const tasks = await Task.find({userId});
-        return res.status(201).send(tasks);//gives an array of all tasks of requested user
+        if(tasks){
+          return res.status(201).send(tasks);//gives an array of all tasks of requested user
+        }
     }
     catch(error){
         return res.status(500).send({msg:error});

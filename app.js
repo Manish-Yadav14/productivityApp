@@ -5,13 +5,15 @@ const connectDB =require('./db/connect');
 
 //routes
 const users = require('./routes/user');
-const tasks = require('./routes/tasks')
+const tasks = require('./routes/tasks');
+const longTasks = require("./routes/longTasks")
 
 //middleware
 app.use(express.static('public'));
 app.use(express.json());
 app.use('/api/v1/users',users);
 app.use('/api/v1/tasks',tasks);
+app.use('/api/v1/longTasks',longTasks);
 
 
 // -------------------------------------- Server Initialisation----------------------------------------

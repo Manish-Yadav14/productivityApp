@@ -5,7 +5,7 @@ const {SECRET_KEY} = process.env;
 
 // Generate a JWT token
 const generateToken = (user) => {
-    return jwt.sign({email: user.email , name:user.name}, SECRET_KEY, {
+    return jwt.sign({id: user._id ,email: user.email , name:user.name}, SECRET_KEY, {
       expiresIn: "2h", // Token expires in 2 hour
     });
 };
